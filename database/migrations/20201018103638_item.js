@@ -2,7 +2,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('item', table => {
     table.increments()
-    table.string('link')
+    table.text('link')
     table.string('title')
     table.string('genre')
     table.string('by')
